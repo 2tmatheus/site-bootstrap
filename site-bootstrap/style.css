@@ -1,0 +1,152 @@
+#cabecalho{ background-color: rgb(246, 255, 245);
+  
+
+}
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    .hero-banner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .hero-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+      object-fit: cover;
+      object-position: center center;
+    }
+
+    @media (max-width: 860px) {
+      .hero-banner img {
+        height: 320px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-banner img {
+        height: 220px;
+      }
+    }
+
+
+    
+
+    body {
+      font-family: sans-serif;
+      padding: 24px;
+      background: #0a2404;
+    }
+
+    h1 {
+      margin-bottom: 24px;
+      font-size: 20px;
+      color: azure;
+    }
+
+   
+
+    .grid {
+      display: grid;
+      gap: 16px;
+
+    
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    /* Tablet: 2 colunas */
+    @media (max-width: 900px) {
+      .grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* Mobile: 1 coluna */
+    @media (max-width: 540px) {
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+   
+
+    .card { 
+      background: rgb(253, 255, 161);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .card-thumb {
+      background: #ddd;
+      aspect-ratio: 16 / 9;
+      overflow: hidden;   
+    }
+
+    .card-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  
+      display: block;     
+    }
+
+    .card-body {
+      padding: 12px;
+    }
+
+    .card-body h2 {
+      font-size: 15px;
+      margin-bottom: 6px;
+    }
+
+    .card-body p {
+      font-size: 13px;
+      color: #555;
+    }
+
+    .card-footer {
+      border-top: 1px solid #ccc;
+      padding: 8px 12px;
+      font-size: 12px;
+      color: #888;
+    }
+.grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(4, 1fr); 
+}
+
+@media (max-width: 900px) {
+  .grid { grid-template-columns: repeat(2, 1fr); } 
+}
+
+@media (max-width: 540px) {
+  .grid { grid-template-columns: 1fr; } 
+}
+.card-thumb {
+  background: #ddd;
+  aspect-ratio: 16 / 9;
+
+  
+  overflow: hidden;
+}
+
+.card-thumb image.png {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;  
+  display: block;      
+}
+
+#feedbacks{
+    color: aliceblue;
+}
+
+    #feedbacks h1 {
+  border-bottom: 1px solid #2a4a1a;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}

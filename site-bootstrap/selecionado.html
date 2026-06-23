@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fettuccine ao Funghi — Verocais</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    body {
+      background: #0a2404;
+      font-family: sans-serif;
+      padding-top: 80px;
+    }
+
+    .detalhe-wrap {
+      max-width: 720px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+    }
+
+    .detalhe-img {
+      width: 100%;
+      border-radius: 8px;
+      object-fit: cover;
+      aspect-ratio: 16 / 9;
+      display: block;
+    }
+
+    .detalhe-nome {
+      color: #e8dcc8;
+      font-size: 22px;
+      margin-top: 1.5rem;
+      margin-bottom: 0.4rem;
+    }
+
+    .detalhe-preco {
+      color: #c9a84c;
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+
+    .detalhe-desc {
+      color: #8a9a80;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      margin-top: 2rem;
+      color: #c9bfad;
+      font-size: 13px;
+      text-decoration: none;
+      border: 1px solid #2a4a1a;
+      padding: 0.4rem 1rem;
+      border-radius: 4px;
+    }
+
+    .btn-voltar:hover {
+      background: #1a3410;
+      color: #e8dcc8;
+    }
+  </style>
+</head>
+<body>
+
+  <nav id="cabecalho" class="navbar fixed-top cabecalho" style="background-color: rgb(246,255,245);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">VEROCAIS</a>
+      <ul class="nav justify-content-center" style="gap: 1rem;">
+        <li class="nav-item">
+          <a class="nav-link" href="cardapio.html">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#contato">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html#feedbacks">Feedbacks</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="detalhe-wrap">
+    <img class="detalhe-img" src="img/macarrao.png" alt="Fettuccine ao Funghi" />
+
+    <h1 class="detalhe-nome">Fettuccine ao Funghi</h1>
+    <div class="detalhe-preco">R$ 67</div>
+    <p class="detalhe-desc">
+      Fettuccine fresco envolvido em um molho cremoso de cogumelos selecionados,
+      resultando em uma textura aveludada e sabor marcante. Preparado com ingredientes
+      frescos e técnica tradicional italiana.
+    </p>
+
+    <a href="index.html" class="btn-voltar">← Voltar</a>
+  </div>
+
+</body>
+</html>

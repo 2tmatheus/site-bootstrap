@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cardápio — Verocais</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: #0a2404;
+      font-family: sans-serif;
+      padding-top: 70px;
+    }
+
+    
+    .secao {
+      padding: 2rem 1.5rem;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .secao-titulo {
+      color: #c9bfad;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #2a4a1a;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+   
+    .item {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      padding: 0.75rem 0;
+    
+    }
+
+    .item-info { flex: 1; }
+
+    .item-nome {
+      color: #e8dcc8;
+      font-size: 15px;
+      margin-bottom: 0.2rem;
+    }
+
+    .item-desc {
+      color: #6a7a60;
+      font-size: 12px;
+    }
+
+    .item-preco {
+      color: #c9a84c;
+      font-size: 14px;
+      white-space: nowrap;
+    }
+
+  
+    #feedbacks { padding: 2rem 1.5rem; max-width: 960px; margin: 0 auto; }
+
+    #feedbacks h1 {
+      color: #c9bfad;
+      font-size: 13px;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      border-bottom: 1px solid #2a4a1a;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .feedback-item {
+      color: #8a9a80;
+      font-size: 13px;
+      padding: 0.75rem 0;
+      border-bottom: 1px solid #1a3410;
+      line-height: 1.6;
+    }
+
+    .feedback-autor {
+      color: #c9bfad;
+      font-size: 12px;
+      margin-top: 0.3rem;
+    }
+
+   
+    #contato {
+      background: #0d1f08;
+      border-top: 1px solid #2a4a1a;
+      padding: 1.5rem 2rem;
+      text-align: center;
+    }
+
+    #contato p {
+      color: #c9bfad;
+      font-size: 13px;
+      margin-bottom: 0.4rem;
+    }
+
+    #contato .copy {
+      color: #4a6035;
+      font-size: 11px;
+      margin-top: 0.8rem;
+    }
+  </style>
+</head>
+<body>
+
+
+  <nav id="cabecalho" class="navbar fixed-top cabecalho" style="background-color: rgb(246,255,245);">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">VEROCAIS</a>
+      <ul class="nav justify-content-center" style="gap: 1rem;">
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Cardápio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#feedbacks">Feedbacks</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  
+  <div class="secao">
+    <div class="secao-titulo">Entradas</div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Bruschetta de Tomate Seco</div>
+        <div class="item-desc">Pão artesanal tostado, tomate seco, azeite e manjericão fresco</div>
+      </div>
+      <div class="item-preco">R$ 32</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Carpaccio de Filet</div>
+        <div class="item-desc">Lâminas finas de filé, alcaparras, parmesão e molho mostarda</div>
+      </div>
+      <div class="item-preco">R$ 48</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Creme de Abóbora</div>
+        <div class="item-desc">Creme aveludado com azeite trufado e sementes tostadas</div>
+      </div>
+      <div class="item-preco">R$ 36</div>
+    </div>
+  </div>
+
+
+  <div class="secao">
+    <div class="secao-titulo">Pratos Principais</div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Fettuccine ao Funghi</div>
+        <div class="item-desc">Molho cremoso de cogumelos selecionados, textura aveludada</div>
+      </div>
+      <div class="item-preco">R$ 67</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Filé Mignon com Manteiga de Ervas</div>
+        <div class="item-desc">Batatas rústicas douradas e aspargos crocantes</div>
+      </div>
+      <div class="item-preco">R$ 98</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Risoto de Bacon</div>
+        <div class="item-desc">Bacon dourado, ervas frescas e lascas de parmesão</div>
+      </div>
+      <div class="item-preco">R$ 72</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Salmão ao Molho de Ervas</div>
+        <div class="item-desc">Azeite aromático, limão-siciliano, arroz de brócolis e batatas</div>
+      </div>
+      <div class="item-preco">R$ 86</div>
+    </div>
+  </div>
+
+  <!-- Sobremesas -->
+  <div class="secao">
+    <div class="secao-titulo">Sobremesas</div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Petit Gâteau</div>
+        <div class="item-desc">Bolo de chocolate com centro quente e sorvete de baunilha</div>
+      </div>
+      <div class="item-preco">R$ 38</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Panna Cotta de Maracujá</div>
+        <div class="item-desc">Creme italiano com calda de maracujá fresco</div>
+      </div>
+      <div class="item-preco">R$ 32</div>
+    </div>
+  </div>
+
+  <!-- Bebidas -->
+  <div class="secao">
+    <div class="secao-titulo">Bebidas</div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Água mineral (500ml)</div>
+        <div class="item-desc">Com ou sem gás</div>
+      </div>
+      <div class="item-preco">R$ 8</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Suco natural</div>
+        <div class="item-desc">Laranja, maracujá ou abacaxi com hortelã</div>
+      </div>
+      <div class="item-preco">R$ 18</div>
+    </div>
+
+    <div class="item">
+      <div class="item-info">
+        <div class="item-nome">Taça de vinho</div>
+        <div class="item-desc">Tinto ou branco, seleção da casa</div>
+      </div>
+      <div class="item-preco">R$ 36</div>
+    </div>
+  </div>
+
+       
+      <div id="feedbacks" >
+       
+        
+         <h1>Feedbacks</h1>
+         
+         <p>⭐⭐⭐⭐⭐ — Helena Vasconcellos
+
+"Uma experiência gastronômica impecável. Cada detalhe, do atendimento aos sabores, transmite sofisticação e excelência."</p>
+
+<p>⭐⭐⭐⭐⭐ — Ricardo Montenegro
+
+"O equilíbrio entre tradição e criatividade transforma cada prato em uma verdadeira obra de arte culinária."</p>
+
+<p> — Beatriz Alencar
+
+"Ambiente refinado, serviço atencioso e pratos memoráveis. Um restaurante que supera expectativas."</p>
+
+<p>⭐⭐⭐⭐⭐ — Eduardo Fontes
+
+"O Verocais oferece uma jornada de sabores única. Elegância, qualidade e requinte em cada momento."</p>
+      </div>
+     
+
+  
+ <footer id="contato" style="background:#0d1f08; border-top:1px solid #2a4a1a; padding:1.5rem 2rem; text-align:center; font-family:sans-serif;">
+  <p style="color:#c9bfad; font-size:13px; margin-bottom:0.4rem;">
+    📍 Rua Nascimento Silva 107
+  </p>
+  <p style="color:#c9bfad; font-size:13px; margin-bottom:0.4rem;">
+    📞 (11) 1111-0000 &nbsp;|&nbsp; ✉️ verocais@gmail.com
+  </p>
+  <p style="color:#4a6035; font-size:11px; margin-top:0.8rem;">
+    © 2026 Verocais. Todos os direitos reservados.
+  </p>
+</footer>
+
+</body>
+</html>
